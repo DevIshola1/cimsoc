@@ -1,0 +1,319 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+body {
+    padding: 0px !important;
+    margin: 0px !important;
+    font-family: Archivo !important;
+    font-size: 14px !important;
+    background-color: #0e2026 !important;
+    height: 100vh;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0px !important;
+    padding: 0px !important;
+}
+
+.splash {
+    height: 100vh;
+    background-image: url(/images/splashbg.svg) !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #0e2026 !important;
+}
+
+.main {
+    height: 100vh;
+    background-image: url(/images/wallet.svg) !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.content-main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+button:disabled {
+    pointer-events: none !important;
+    opacity: 0.5 !important;
+    cursor: not-allowed !important;
+}
+
+.inner-splash {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.wallet h2 {
+    text-align: center;
+    color: #dafdff;
+    font-size: 32px;
+    font-family: Archivo;
+    font-weight: 600;
+}
+
+.wallet p {
+    color: #6a9eb2;
+    font-size: 16px;
+    font-family: Archivo;
+    font-weight: 400;
+    text-align: center;
+}
+
+.card-custom {
+    padding: 24px;
+    background: linear-gradient( 182deg, rgba(36, 214, 248, 0.05) 0%, rgba(80, 242, 165, 0.05) 100%);
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px #1c4250 solid;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+}
+
+.wallets .card-custom {
+    width: 200px;
+}
+
+.wallet {
+    text-align: center;
+}
+
+button {
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background: #50f2a5;
+    border-radius: 10px !important;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border: none !important;
+    display: inline-flex;
+    text-align: center;
+    color: #0b181d;
+    font-size: 16px !important;
+    font-family: Archivo;
+    font-weight: 600;
+}
+
+.wallet .help {
+    color: #b9dcea;
+    font-size: 16px;
+    font-family: Archivo;
+    font-weight: 400;
+    word-wrap: break-word;
+    text-align: center !important;
+}
+
+.wallet a {
+    color: #50f2a5 !important;
+    font-size: 16px !important;
+    font-family: Archivo !important;
+    font-weight: 400 !important;
+    word-wrap: break-word;
+    text-decoration: none;
+}
+
+.outline {
+    padding-top: 12px;
+    padding-bottom: 13px;
+    padding-left: 16px;
+    padding-right: 16px;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px #234b59 solid !important;
+    background-color: transparent !important;
+    justify-content: center;
+    align-items: center;
+    color: white !important;
+    gap: 8px;
+    display: inline-flex;
+}
+
+.wallet h1 {
+    color: #50F2A5;
+    font-size: 18px;
+    font-family: Archivo;
+    font-weight: 400;
+}
+
+.wallet input {
+    border: none;
+    background-color: transparent !important;
+    color: #DAFDFF;
+    font-size: 40px;
+    font-family: Archivo;
+    font-weight: 600;
+    width: 18%;
+}
+
+.input-balance {
+    border: none;
+    background-color: transparent !important;
+    color: #DAFDFF;
+    font-size: 40px;
+    font-family: Archivo;
+    font-weight: 600;
+}
+
+.wallet input:focus-visible {
+    outline: none !important;
+    border: none !important;
+}
+
+.wallet input::placeholder {
+    color: #DAFDFF;
+    font-size: 40px;
+    font-family: Archivo;
+    font-weight: 600;
+}
+
+input::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: #DAFDFF;
+    font-size: 40px;
+    font-family: Archivo;
+    font-weight: 600;
+}
+
+input::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #DAFDFF;
+    font-size: 40px;
+    font-family: Archivo;
+    font-weight: 600;
+}
+
+input:-ms-input-placeholder {
+    /* IE 10+ */
+    color: #DAFDFF;
+    font-size: 40px;
+    font-family: Archivo;
+    font-weight: 600;
+}
+
+input::-ms-input-placeholder {
+    /* Edge */
+    color: #DAFDFF;
+    font-size: 40px;
+    font-family: Archivo;
+    font-weight: 600;
+}
+
+input::placeholder {
+    /* Standard syntax */
+    color: #DAFDFF;
+    font-size: 40px;
+    font-family: Archivo;
+    font-weight: 600;
+}
+
+.modal-dialog {
+    max-width: 550px !important;
+}
+
+.Toastify__toast--success {
+    background-color: #0e2026 !important;
+    color: white !important;
+}
+
+.btn-close {
+    --bs-btn-close-color: #000;
+    --bs-btn-close-bg: url(/Images/close.svg) !important;
+}
+
+.after p {
+    color: #B9DCEA;
+    font-size: 16px;
+    font-family: Archivo;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.staked h1 {
+    text-align: center;
+    color: white;
+    font-size: 32px;
+    font-family: Archivo;
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: 43px;
+}
+
+.staked p {
+    text-align: center;
+    color: #B9DCEA;
+    font-size: 16px;
+    font-family: Archivo;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.modal-content {
+    background: #13272E !important;
+}
+
+.modal-header {
+    border-bottom: none !important;
+}
+
+.modal-footer {
+    border-top: none !important;
+}
+
+.modal-title {
+    color: #DAFDFF !important;
+    font-size: 24px;
+    font-family: Archivo;
+    font-weight: 800;
+    line-height: 26px;
+    border-bottom: none;
+}
+
+@media only screen and (max-width:767px) {
+    .logo {
+        width: 350px !important;
+    }
+    .wallets .card-custom {
+        width: 100% !important;
+    }
+    .outline {
+        font-size: 14px !important;
+    }
+    .card-custom {
+        padding: 15px;
+        width: 100% !important;
+    }
+    .wallet p {
+        font-size: 14px;
+    }
+    .wallet input {
+        width: 25%;
+    }
+}
+
+@media only screen and (max-width:450px) {
+    .wallet input {
+        width: 25%;
+    }
+    .content-main {
+        width: 100%;
+        padding: 0px 14px;
+    }
+}
